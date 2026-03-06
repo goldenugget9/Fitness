@@ -1,0 +1,25 @@
+{
+  "expo": {
+    "name": "Adaptive Workout",
+    "slug": "adaptive-workout",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#0f0f0f"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.adaptive.workout"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#0f0f0f"
+      },
+      "package": "com.adaptive.workout"
+    }
+  }
+}
