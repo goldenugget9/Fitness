@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { createStackNavigator } from '@react-navigation/stack';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { Text } from 'react-native';
 import { colors, font } from '../theme';
 
@@ -14,7 +14,7 @@ import HistoryScreen from '../screens/HistoryScreen';
 import WorkoutDetailScreen from '../screens/WorkoutDetailScreen';
 
 const Tab = createBottomTabNavigator();
-const Stack = createStackNavigator();
+const Stack = createNativeStackNavigator();
 
 const NAV_THEME = {
   dark: true,
@@ -32,7 +32,7 @@ const SCREEN_OPTIONS = {
   headerStyle: { backgroundColor: colors.surface },
   headerTintColor: colors.textPrimary,
   headerTitleStyle: { fontWeight: '700', fontSize: font.lg },
-  cardStyle: { backgroundColor: colors.bg },
+  contentStyle: { backgroundColor: colors.bg },
 };
 
 // ── Home Stack ────────────────────────────────────────────────────────────────
@@ -42,7 +42,7 @@ function HomeStack() {
       <Stack.Screen
         name="Home"
         component={HomeScreen}
-        options={{ title: 'Adaptive Workout', headerLargeTitle: false }}
+        options={{ title: 'Adaptive Workout' }}
       />
       <Stack.Screen
         name="Workout"

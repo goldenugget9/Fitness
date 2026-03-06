@@ -17,8 +17,7 @@
     "react-native": "0.77.2",
     "@react-navigation/native": "^6.1.18",
     "@react-navigation/bottom-tabs": "^6.6.1",
-    "@react-navigation/stack": "^6.4.1",
-    "react-native-gesture-handler": "~2.21.0",
+    "@react-navigation/native-stack": "^6.11.0",
     "react-native-safe-area-context": "5.0.0",
     "react-native-screens": "~4.9.0",
     "@expo/vector-icons": "^14.0.4"
